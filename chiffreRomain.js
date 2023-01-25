@@ -1,4 +1,4 @@
-function decimalToRoman(decimal) {
+function convertToRoman(nombreArabe) {
     // tableau des valeurs numériques romaines
     const romanNumerals = ['M', 'CM', 'D', 'CD', 'C', 'XC', 'L', 'XL', 'X', 'IX', 'V', 'IV', 'I'];
     // tableau des valeurs décimales correspondantes
@@ -7,10 +7,10 @@ function decimalToRoman(decimal) {
     let roman = '';
     let index = 0;
   
-    while (decimal > 0) {
-      if (decimal >= decimalValues[index]) {
+    while (nombreArabe > 0) {
+      if (nombreArabe >= decimalValues[index]) {
         roman += romanNumerals[index];
-        decimal -= decimalValues[index];
+        nombreArabe -= decimalValues[index];
       } else {
         index++;
       }
