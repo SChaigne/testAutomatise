@@ -18,3 +18,4 @@ function convertToRoman(nombreArabe) {
     return roman;
   }
   
+  module.exports = convertToRoman;
